@@ -1,6 +1,6 @@
 # Bruno's AI Label SystemⒷ
 
-<iframe src='https://mebebruno.github.io/BrunosAILabelSystem/label.html?code' style='height: 3rem; aspect-ratio: 1.508 / 1; border: none; background: transparent; overflow: hidden;' title='AI Label'></iframe>
+<img src="https://img.shields.io/badge/Made by AI-333333" height="24rem"/>
 
 > A simple labeling system to mark AI-generated content 🏷️
 
