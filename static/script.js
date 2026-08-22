@@ -145,7 +145,7 @@ if (dynamic_heading_element !== null && main_iframe_element !== null && legend_l
         document.title = combined_identifier_title_string;
         dynamic_heading_element.textContent = combined_identifier_title_string;
         dynamic_subtitle_element.textContent = combined_readable_title_string;
-        main_iframe_element.src = 'label.html?' + clean_query_string;
+        main_iframe_element.src = 'https://mebebruno.github.io/BrunosAILabelSystem/label.html?' + clean_query_string;
 
         async function initialize_dynamic_aspect_ratios_function() {
             const unique_file_names_to_measure_list = [];
@@ -212,7 +212,7 @@ if (dynamic_heading_element !== null && main_iframe_element !== null && legend_l
                 list_item_element.classList.add('legend_item_element');
 
                 const legend_iframe_element = document.createElement('iframe');
-                legend_iframe_element.src = 'label.html?' + active_symbol_name_string + '&single';
+                legend_iframe_element.src = 'https://mebebruno.github.io/BrunosAILabelSystem/label.html?' + active_symbol_name_string + '&single';
                 legend_iframe_element.title = symbol_title_mapping_object[active_symbol_name_string];
                 legend_iframe_element.setAttribute('aria-hidden', 'true');
                 legend_iframe_element.setAttribute('tabindex', '-1');
@@ -324,7 +324,7 @@ if (checkbox_container_element !== null) {
         const adjusted_generated_aspect_ratio_number = (total_aspect_ratio_sum_number * 0.9) + 0.1;
         const rounded_ratio_number = Math.round(adjusted_generated_aspect_ratio_number * 1000) / 1000;
 
-        const iframe_code_string = '<iframe src=\'label.html?' + new_clean_query_string + '\' style=\'height: 3rem; aspect-ratio: ' + rounded_ratio_number + ' / 1; border: none; background: transparent; overflow: hidden;\' title=\'AI Label\'></iframe>';
+        const iframe_code_string = '<iframe src=\'https://mebebruno.github.io/BrunosAILabelSystem/label.html?' + new_clean_query_string + '\' style=\'height: 3rem; aspect-ratio: ' + rounded_ratio_number + ' / 1; border: none; background: transparent; overflow: hidden;\' title=\'AI Label\'></iframe>';
         
         output_textarea_element.value = iframe_code_string;
         iframe_preview_container_element.innerHTML = iframe_code_string;
