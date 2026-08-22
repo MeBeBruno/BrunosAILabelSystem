@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color_label_background: #00ff00;
+    
+    --color_background: #ffffff;
+    --color_text: #000000;
+    --color_primary: #ff00ff;
+    --color_surface: #ffffff;
+    --color_border: #000000;
+    
+    --spacing_small: 1rem;
+    --spacing_medium: 2rem;
+    --spacing_large: 4rem;
+    --border_radius: 1rem;
+    --font_size_base: 1rem;
+    --font_size_large: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color_background: #000000;
+        --color_text: #ffffff;
+        --color_primary: #00ff00;
+        --color_surface: #000000;
+        --color_border: #ffffff;
+    }
+}
+
+.page_label_body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.page_main_body {
+    background-color: var(--color_background);
+    color: var(--color_text);
+    font-family: system-ui, sans-serif;
+    font-size: var(--font_size_base);
+    line-height: 1.6;
+    padding: var(--spacing_large) var(--spacing_medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#symbol_container_element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5vh;
+    height: 100vh;
+    width: max-content;
+    border-radius: 10vh;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: var(--color_label_background);
+    outline: none;
+    color: inherit;
+}
+
+#symbol_container_element:not([href]) {
+    cursor: default;
+}
+
+.ai_symbol_image {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+main {
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_large);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--font_size_large);
+    margin-bottom: var(--spacing_small);
+    color: var(--color_primary);
+}
+
+section {
+    background-color: var(--color_surface);
+    padding: var(--spacing_large);
+    border-radius: var(--border_radius);
+    box-shadow: 0 0.5rem 1rem oklch(0 0 0 / 0.1);
+    border: 0.1rem solid var(--color_border);
+}
+
+#iframe_presentation_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#label_iframe_element {
+    border: none;
+    height: 6rem;
+}
+
+#legend_list_element {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_medium);
+}
+
+.legend_item_element {
+    display: grid;
+    grid-template-columns: var(--dynamic_icon_column_width, max-content) 1fr;
+    align-items: center;
+    gap: var(--spacing_medium);
+    background-color: var(--color_surface);
+    padding: var(--spacing_medium);
+    border-radius: var(--border_radius);
+}
+
+.legend_iframe_element {
+    border: none;
+    height: 4rem;
+    background-color: transparent;
+    justify-self: center;
+}
+
+.legend_text_element {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--color_primary);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
+footer {
+    margin-top: var(--spacing_large);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: var(--spacing_medium);
+    color: var(--color_primary);
+    margin-top: var(--spacing_medium);
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: var(--spacing_small);
+}
+
+.form_group_element {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_small);
+    margin-bottom: var(--spacing_medium);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type='checkbox'] {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    accent-color: var(--color_primary);
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+    padding: var(--spacing_small);
+    font-family: monospace;
+    font-size: var(--font_size_base);
+    background-color: var(--color_background);
+    color: var(--color_text);
+    border: 0.1rem solid var(--color_border);
+    border-radius: 0.5rem;
+    resize: vertical;
+}
+
+.divider_element {
+    height: 0.1rem;
+    background-color: var(--color_border);
+    margin: var(--spacing_medium) 0;
+    border: none;
+}
+
+#iframe_preview_container_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+    padding: var(--spacing_medium);
+    background-color: var(--color_background);
+    border: 0.1rem dashed var(--color_border);
+    border-radius: var(--border_radius);
+}

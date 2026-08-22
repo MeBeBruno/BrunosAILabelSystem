@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.00201416015625 462">
+    <style>
+        .symbol { fill: #ff00ff; }
+        .background { fill: #00ff00; }
+    </style>
+    <rect class="background" x="0" y="0" width="443.00201416015625" height="462"></rect>
+    <path class="symbol" d="M 153 341.824 192.096 358 291 120.176 252.115 104 153 341.824 Z"></path>
+    <path class="symbol" d="M 118.274 113 0 231 118.274 349.002 148.002 319.343 59.665 231 148.002 142.657 118.274 113 Z"></path>
+    <path class="symbol" d="M 295 142.657 383.337 231 295 319.343 324.726 349.002 443.002 231 324.726 113 295 142.657 Z"></path>
+</svg>

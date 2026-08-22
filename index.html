@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bruno's AI Label System</title>
+    <link rel="shortcut icon" href="static/favicon.svg" type="image/svg">
+    <link rel='stylesheet' href='static/style.css'>
+</head>
+<body class='page_main_body'>
+    <main>
+        <header>
+            <h1>Bruno's <abbr title="Generative Artificial intelligence">AI</abbr> Label System</h1>
+            <p>A simple to use system that allows marking AI-generated content on websites</p>
+        </header>
+
+        <section>
+            <h2>Label Generator</h2>
+            <p>Select the categories of AI-generated content your label should mark</p>
+            
+            <div class='form_group_element' id='checkbox_container_element'>
+                <label>
+                    <input type='checkbox' value='code' class='symbol_checkbox_element'>
+                    Code
+                </label>
+                <label>
+                    <input type='checkbox' value='music' class='symbol_checkbox_element'>
+                    Music and Sound
+                </label>
+                <label>
+                    <input type='checkbox' value='picture' class='symbol_checkbox_element'>
+                    Picture
+                </label>
+                <label>
+                    <input type='checkbox' value='text' class='symbol_checkbox_element'>
+                    Text
+                </label>
+                <label>
+                    <input type='checkbox' value='voice' class='symbol_checkbox_element'>
+                    Voice
+                </label>
+                <label>
+                    <input type='checkbox' value='other' class='symbol_checkbox_element'>
+                    Other (unclarified)
+                </label>
+            </div>
+
+            <hr class='divider_element'>
+
+            <div class='form_group_element'>
+                <label>
+                    <input type='checkbox' id='single_mode_checkbox_element'>
+                    Single Symbol (No brackets, only one sybol)
+                </label>
+            </div>
+
+            <h2>Embed Code</h2>
+            <textarea id='output_textarea_element' readonly aria-label='Generated HTML iframe code'></textarea>
+            
+            <h2>Preview</h2>
+            <div id='iframe_preview_container_element'></div>
+        </section>
+    </main>
+    <script src='static/script.js'></script>
+</body>
+</html>

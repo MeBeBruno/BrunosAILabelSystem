@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396 462">
+    <style>
+        .symbol { fill: #ff00ff; }
+        .background { fill: #00ff00; }
+    </style>
+    <rect class="background" x="0" y="0" width="396" height="462"></rect>
+    <rect class="symbol" x="363" y="210" width="33" height="42"></rect>
+    <rect class="symbol" x="272" y="210" width="33" height="42"></rect>
+    <rect class="symbol" x="0" y="210" width="33" height="42"></rect>
+    <rect class="symbol" x="318" y="189" width="33" height="85"></rect>
+    <rect class="symbol" x="227" y="189" width="33" height="85"></rect>
+    <rect class="symbol" x="45" y="189" width="33" height="85"></rect>
+    <rect class="symbol" x="182" y="168" width="32" height="126"></rect>
+    <rect class="symbol" x="91" y="146" width="33" height="169"></rect>
+    <rect class="symbol" x="136" y="104" width="33" height="254"></rect>
+</svg>

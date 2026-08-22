@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254 462">
+    <style>
+        .symbol { fill: #ff00ff; }
+        .background { fill: #00ff00; }
+    </style>
+    <rect class="background" x="0" y="0" width="254" height="462"></rect>
+    <path class="symbol" d="M 0 104 254 104 254 358 0 358 0 104 Z"></path>
+</svg>
