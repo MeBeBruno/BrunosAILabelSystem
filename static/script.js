@@ -59,7 +59,7 @@ if (symbol_container_element !== null) {
     const is_single_mode_active = url_parameters_object.has('single');
 
     if (is_single_mode_active === false) {
-        symbol_container_element.href = 'explain.html?' + clean_query_string;
+        symbol_container_element.href = 'https://mebebruno.github.io/BrunosAILabelSystem/explain.html?' + clean_query_string;
     } else {
         symbol_container_element.removeAttribute('target');
         symbol_container_element.removeAttribute('rel');
@@ -115,7 +115,7 @@ const legend_list_element = document.getElementById('legend_list_element');
 
 if (dynamic_heading_element !== null && main_iframe_element !== null && legend_list_element !== null) {
     if (active_symbol_names_list.length === 0) {
-        window.location.href = 'index.html';
+        window.location.href = 'https://mebebruno.github.io/BrunosAILabelSystem/index.html';
     } else {
         const readable_names_list = [];
         for (const active_symbol_name_string of active_symbol_names_list) {
