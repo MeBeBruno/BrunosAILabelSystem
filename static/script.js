@@ -284,7 +284,7 @@ if (checkbox_container_element !== null) {
             markdown_identifier_string = markdown_identifier_string + symbol_title_mapping_object[selected_symbol_name_string].charAt(0);
         }
 
-        const markdown_link_string = '[AI-Label: B-{' + markdown_identifier_string + '}](https://mebebruno.github.io/BrunosAILabelSystem/explain.html?' + new_clean_query_string + ')';
+        const markdown_link_string = 'AI Label: B-[{' + markdown_identifier_string + '}](https://mebebruno.github.io/BrunosAILabelSystem/explain.html?' + new_clean_query_string + ')';
 
         const is_single_mode_active = single_mode_checkbox_element.checked;
         
