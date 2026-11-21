@@ -242,8 +242,9 @@ const checkbox_container_element = document.getElementById('checkbox_container_e
 if (checkbox_container_element !== null) {
     const checkbox_node_list = document.querySelectorAll('.symbol_checkbox_element');
     const single_mode_checkbox_element = document.getElementById('single_mode_checkbox_element');
-    const output_textarea_element = document.getElementById('output_textarea_element');
     const iframe_preview_container_element = document.getElementById('iframe_preview_container_element');
+    const output_textarea_element = document.getElementById('output_textarea_element');
+    const markdown_output_textarea_element = document.getElementById('markdown_output_textarea_element');
 
     for (const checkbox_element of checkbox_node_list) {
         if (active_symbol_names_list.includes(checkbox_element.value)) {
@@ -268,17 +269,22 @@ if (checkbox_container_element !== null) {
 
         if (selected_symbol_names_list.length === 0) {
             output_textarea_element.value = 'Please select at least one symbol above.';
+            markdown_output_textarea_element.value = 'Please select at least one symbol above.';
             iframe_preview_container_element.innerHTML = '';
             return;
         }
 
         let new_clean_query_string = '';
+        let markdown_identifier_string = '';
         for (const selected_symbol_name_string of selected_symbol_names_list) {
             if (new_clean_query_string !== '') {
                 new_clean_query_string = new_clean_query_string + '&';
             }
             new_clean_query_string = new_clean_query_string + selected_symbol_name_string;
+            markdown_identifier_string = markdown_identifier_string + symbol_title_mapping_object[selected_symbol_name_string].charAt(0);
         }
+
+        const markdown_link_string = '[B-{' + markdown_identifier_string + '}](https://mebebruno.github.io/BrunosAILabelSystem/explain.html?' + new_clean_query_string + ')';
 
         const is_single_mode_active = single_mode_checkbox_element.checked;
         
@@ -327,6 +333,7 @@ if (checkbox_container_element !== null) {
         const iframe_code_string = '<iframe src=\'https://mebebruno.github.io/BrunosAILabelSystem/label.html?' + new_clean_query_string + '\' style=\'height: 3rem; aspect-ratio: ' + rounded_ratio_number + ' / 1; border: none; background: transparent; overflow: hidden;\' title=\'AI Label\'></iframe>';
         
         output_textarea_element.value = iframe_code_string;
+        markdown_output_textarea_element.value = markdown_link_string;
         iframe_preview_container_element.innerHTML = iframe_code_string;
     }
 
