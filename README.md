@@ -1,6 +1,6 @@
 # Bruno's AI Label SystemⒷ
 
-<img src="https://img.shields.io/badge/Made by AI-333333" height="24rem"/>
+[B-{C}](https://mebebruno.github.io/BrunosAILabelSystem/explain.html?code)
 
 > A simple labeling system to mark AI-generated content 🏷️
 
