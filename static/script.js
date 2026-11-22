@@ -28,12 +28,12 @@ const symbol_file_mapping_object = {
 };
 
 const symbol_title_mapping_object = {
-    'code': 'CODE',
-    'music': 'MUSIC & SOUND',
-    'picture': 'PICTURES',
-    'text': 'TEXT',
-    'voice': 'VOICE',
-    'other': 'OTHER'
+    'code': 'code',
+    'music': 'music & sound',
+    'picture': 'pictures',
+    'text': 'text',
+    'voice': 'voice',
+    'other': 'other'
 };
 
 const symbol_description_mapping_object = {
@@ -90,7 +90,7 @@ if (symbol_container_element !== null) {
         files_to_render_list.push({
             file_name_string: 'AI_Bracket_Closed.svg'
         });
-    }
+    }a
 
     for (const file_information_object of files_to_render_list) {
         const image_element = document.createElement('img');
@@ -128,7 +128,7 @@ if (dynamic_heading_element !== null && main_iframe_element !== null && legend_l
             if (loop_index_number < readable_names_list.length - 2) {
                 combined_readable_title_string = combined_readable_title_string + ', ';
             } else if (loop_index_number === readable_names_list.length - 2) {
-                combined_readable_title_string = combined_readable_title_string + ' & ';
+                combined_readable_title_string = combined_readable_title_string + ' and ';
             }
         }
 
