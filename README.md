@@ -1,4 +1,4 @@
-# Bruno's AI Label SystemⒷ
+# Bruno's AI Label System<sup>Ⓑ</sup>
 
 AI Label: B-[{C}](https://mebebruno.github.io/BrunosAILabelSystem/explain.html?code)
 
