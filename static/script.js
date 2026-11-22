@@ -140,7 +140,7 @@ if (dynamic_heading_element !== null && main_iframe_element !== null && legend_l
         for (let loop_index_number = 0; loop_index_number < readable_names_list.length; loop_index_number = loop_index_number + 1) {
             combined_identifier_title_string = combined_identifier_title_string + readable_names_list[loop_index_number].charAt(0);
         }
-        combined_identifier_title_string = 'Bruno\'s AI Label Explanation (' + combined_identifier_title_string + ')';
+        combined_identifier_title_string = 'AI Label Explanation (' + combined_identifier_title_string + ')';
 
         document.title = combined_identifier_title_string;
         dynamic_heading_element.textContent = combined_identifier_title_string;
