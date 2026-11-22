@@ -28,12 +28,12 @@ const symbol_file_mapping_object = {
 };
 
 const symbol_title_mapping_object = {
-    'code': 'Code',
-    'music': 'Music & Sound',
-    'picture': 'Pictures',
-    'text': 'Text',
-    'voice': 'Voice',
-    'other': 'Other'
+    'code': 'CODE',
+    'music': 'MUSIC & SOUND',
+    'picture': 'PICTURES',
+    'text': 'TEXT',
+    'voice': 'VOICE',
+    'other': 'OTHER'
 };
 
 const symbol_description_mapping_object = {
@@ -128,7 +128,7 @@ if (dynamic_heading_element !== null && main_iframe_element !== null && legend_l
             if (loop_index_number < readable_names_list.length - 2) {
                 combined_readable_title_string = combined_readable_title_string + ', ';
             } else if (loop_index_number === readable_names_list.length - 2) {
-                combined_readable_title_string = combined_readable_title_string + ' and ';
+                combined_readable_title_string = combined_readable_title_string + ' & ';
             }
         }
 
