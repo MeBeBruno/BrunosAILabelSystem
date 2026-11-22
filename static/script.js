@@ -90,7 +90,7 @@ if (symbol_container_element !== null) {
         files_to_render_list.push({
             file_name_string: 'AI_Bracket_Closed.svg'
         });
-    }a
+    }
 
     for (const file_information_object of files_to_render_list) {
         const image_element = document.createElement('img');
