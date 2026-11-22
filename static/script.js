@@ -28,12 +28,12 @@ const symbol_file_mapping_object = {
 };
 
 const symbol_title_mapping_object = {
-    'code': 'code',
-    'music': 'music & sound',
-    'picture': 'pictures',
-    'text': 'text',
-    'voice': 'voice',
-    'other': 'other'
+    'code': 'Code',
+    'music': 'Music & Sound',
+    'picture': 'Pictures',
+    'text': 'Text',
+    'voice': 'Voice',
+    'other': 'Other'
 };
 
 const symbol_description_mapping_object = {
